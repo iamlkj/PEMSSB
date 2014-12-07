@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11G56" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller1-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="loginViewController1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="daziran_diqiu_sucai-002.jpg" id="6rE-cM-nmT">
+                                <rect key="frame" x="-29" y="-10" width="1082" height="768"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="3IM-vn-tRk">
+                                <rect key="frame" x="256" y="187" width="512" height="432"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" background="daziran_diqiu_sucai-002.jpg" id="U4k-tU-sio">
+                                        <rect key="frame" x="150" y="221" width="320" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="hide:" destination="2" eventType="editingDidEndOnExit" id="QiY-h2-aYu"/>
+                                            <action selector="hide:" destination="2" eventType="editingDidEnd" id="X0d-jI-dc2"/>
+                                            <action selector="startedit:" destination="2" eventType="editingDidBegin" id="gfc-aH-P9r"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="User Name:" lineBreakMode="tailTruncation" minimumFontSize="10" id="Nfk-qZ-7lt">
+                                        <rect key="frame" x="37" y="220" width="92" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PassWord:" lineBreakMode="tailTruncation" minimumFontSize="10" id="xRA-ia-DqK">
+                                        <rect key="frame" x="37" y="271" width="92" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="wfP-ms-om5">
+                                        <rect key="frame" x="150" y="267" width="320" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="hide:" destination="2" eventType="editingDidEndOnExit" id="4PB-lv-keW"/>
+                                            <action selector="hide:" destination="2" eventType="editingDidEnd" id="q5p-77-jj0"/>
+                                            <action selector="startedit:" destination="2" eventType="editingDidBegin" id="ofv-4a-6GS"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="IP:" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="1PB-7U-bz5">
+                                        <rect key="frame" x="62" y="311" width="42" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="nVz-7C-Wvb">
+                                        <rect key="frame" x="150" y="311" width="155" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="hide:" destination="2" eventType="editingDidEndOnExit" id="Jj5-dN-KLD"/>
+                                            <action selector="hide:" destination="2" eventType="editingDidEnd" id="owc-Yz-ABP"/>
+                                            <action selector="startedit:" destination="2" eventType="editingDidBegin" id="g81-Ad-p7K"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="PORT" lineBreakMode="tailTruncation" minimumFontSize="10" id="Wt1-LN-lua">
+                                        <rect key="frame" x="317" y="311" width="48" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="23D-kT-9Lv">
+                                        <rect key="frame" x="373" y="309" width="97" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="hide:" destination="2" eventType="editingDidEndOnExit" id="BFG-B8-V8Z"/>
+                                            <action selector="hide:" destination="2" eventType="editingDidEnd" id="KRS-Zn-DgU"/>
+                                            <action selector="startedit:" destination="2" eventType="editingDidBegin" id="xVu-Dg-n0W"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="未命名-1.png" id="gMf-0C-NbG">
+                                        <rect key="frame" x="196" y="0.0" width="121" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FgB-yh-ayG">
+                                        <rect key="frame" x="178" y="350" width="157" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="doneEdit:" destination="2" eventType="touchUpInside" id="baR-vb-aWB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="button" destination="FgB-yh-ayG" id="av7-lJ-CWc"/>
+                        <outlet property="ip" destination="nVz-7C-Wvb" id="3oS-v7-tQM"/>
+                        <outlet property="name" destination="U4k-tU-sio" id="KsE-LY-jcB"/>
+                        <outlet property="pass" destination="wfP-ms-om5" id="F5U-HA-cMO"/>
+                        <outlet property="port" destination="23D-kT-9Lv" id="hck-rM-xT9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+                <window opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="LbV-43-5hd">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="54f-ex-5kI">
+                            <rect key="frame" x="-128" y="896" width="1024" height="89"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                </window>
+                <customObject id="RmH-kx-4Mz" userLabel="CoverFlowTest App Delegate" customClass="AppDelegate">
+                    <connections>
+                        <outlet property="window1" destination="LbV-43-5hd" id="pft-ff-PKL"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="180" y="-964"/>
+        </scene>
+        <!--Coverflow2-->
+        <scene sceneID="xdA-zy-reK">
+            <objects>
+                <viewController storyboardIdentifier="cf2" id="uD6-ZM-5DM" customClass="coverflow2" sceneMemberID="viewController">
+                    <view key="view" contentMode="center" id="RUd-LI-lHn" customClass="AFOpenFlowView">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="24" id="nZf-T8-k8b">
+                                <rect key="frame" x="254" y="20" width="517" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <connections>
+                            <outlet property="dataSource" destination="uD6-ZM-5DM" id="Rpg-SW-3M1"/>
+                            <outlet property="viewDelegate" destination="uD6-ZM-5DM" id="uWr-xq-sxd"/>
+                        </connections>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="text1" destination="nZf-T8-k8b" id="aHb-bX-RRy"/>
+                        <outlet property="view" destination="RUd-LI-lHn" id="jA7-gB-dT6"/>
+                        <segue destination="IR3-bn-jEX" kind="modal" identifier="seguebuildtoflow" modalTransitionStyle="flipHorizontal" id="vvM-Wh-akF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cx0-uf-ur6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="VFO-mp-o7a" customClass="AppDelegate">
+                    <connections>
+                        <outlet property="window2" destination="A1X-j7-tli" id="H95-Wh-6PL"/>
+                    </connections>
+                </customObject>
+                <view contentMode="scaleToFill" id="A1X-j7-tli" customClass="UIWindow">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="1410" y="-991"/>
+        </scene>
+        <!--Cover Flow Test View Controller-->
+        <scene sceneID="knJ-UD-Zgi">
+            <objects>
+                <viewController id="IR3-bn-jEX" customClass="CoverFlowTestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9hm-SS-3aZ" customClass="AFOpenFlowView">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="24" id="aBU-Qu-ECC">
+                                <rect key="frame" x="450" y="20" width="125" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" id="7pF-to-6PF">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="B1" id="2hs-gA-eux">
+                                        <barButtonItem key="leftBarButtonItem" tag="1" title="back" id="rYR-Rd-j3j">
+                                            <connections>
+                                                <segue destination="uD6-ZM-5DM" kind="modal" id="xqr-YH-Fse"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <connections>
+                            <outlet property="dataSource" destination="IR3-bn-jEX" id="e81-N5-Xdf"/>
+                            <outlet property="viewDelegate" destination="IR3-bn-jEX" id="3X1-Kn-sll"/>
+                        </connections>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="text" destination="2hs-gA-eux" id="nUL-aD-iiT"/>
+                        <outlet property="view" destination="9hm-SS-3aZ" id="zh8-hT-goC"/>
+                        <segue destination="gOW-V6-ecv" kind="modal" identifier="segueFlowToFloor" id="PNO-uR-qVm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y4x-ZN-e24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1410" y="-59"/>
+        </scene>
+        <!--Sheet View Controller-->
+        <scene sceneID="J9G-10-BHE">
+            <objects>
+                <viewController id="Feh-97-ErZ" customClass="sheetViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zCA-Uf-98r">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="h2K-gB-RGa" customClass="CPTGraphHostingView">
+                                <rect key="frame" x="0.0" y="44" width="540" height="556"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" id="Bnn-mD-aVa">
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Power Consuming Sheet(Watt/s)" id="6Bx-sm-2YM">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="s79-07-wZ7">
+                                            <connections>
+                                                <action selector="back:" destination="Feh-97-ErZ" id="fGd-Od-lDR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="500" height="400"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="scatterPlotView" destination="h2K-gB-RGa" id="9iC-JL-rCN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xjj-6d-Xhv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3838" y="-972"/>
+        </scene>
+        <!--Floor View Controller-->
+        <scene sceneID="dSB-qX-lLh">
+            <objects>
+                <viewController storyboardIdentifier="floorvc" id="gOW-V6-ecv" customClass="floorViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pbI-ji-fmv">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="3ks-FB-Q1S">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="vDk-8B-SEd">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="6Gy-bH-V4R">
+                                            <connections>
+                                                <action selector="back:" destination="gOW-V6-ecv" id="BNW-zr-kXm"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="REPORT" id="0fd-Wq-9iy">
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="Bar:" destination="gOW-V6-ecv" id="2hw-Ie-spf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="9u9-Nb-XGX"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="1024" height="748"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="controlBar" destination="3ks-FB-Q1S" id="IQ2-Vl-NvI"/>
+                        <outlet property="itemDelete" destination="0fd-Wq-9iy" id="b67-5c-JVJ"/>
+                        <segue destination="Feh-97-ErZ" kind="modal" identifier="segueSheet" modalPresentationStyle="formSheet" modalTransitionStyle="flipHorizontal" id="RwI-WU-ERg"/>
+                        <segue destination="lZx-qI-Z2H" kind="modal" identifier="segueBar" modalTransitionStyle="coverVertical" id="Jml-jr-WeD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ZY-2k-9xs" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2621" y="-59"/>
+        </scene>
+        <!--View Controller Bar Chart-->
+        <scene sceneID="4mn-10-k1J">
+            <objects>
+                <viewController id="lZx-qI-Z2H" customClass="ViewControllerBarChart" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ba-rQ-gVb">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="bTQ-to-Xvy" customClass="CPTGraphHostingView">
+                                <rect key="frame" x="0.0" y="44" width="1024" height="660"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="QMJ-xu-WeS" customClass="CPTGraphHostingView">
+                                <rect key="frame" x="0.0" y="44" width="1024" height="660"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" id="idg-w4-7Xc">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="aKp-B6-3Oi">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="5OU-uf-nGJ">
+                                            <connections>
+                                                <action selector="back:" destination="lZx-qI-Z2H" id="1Fb-zc-9Lr"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="0HY-46-NCH">
+                                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="ybI-hb-d22">
+                                                <rect key="frame" x="790" y="7" width="227" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="Annual Bar"/>
+                                                    <segment title="Instant Scatter"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="modeChange" destination="lZx-qI-Z2H" eventType="valueChanged" id="9TG-jE-JV2"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="fJH-ba-TtL">
+                                <rect key="frame" x="0.0" y="704" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="barChartView" destination="bTQ-to-Xvy" id="l78-1I-afM"/>
+                        <outlet property="mode" destination="ybI-hb-d22" id="bmf-ss-iRB"/>
+                        <outlet property="scatterPlotView" destination="QMJ-xu-WeS" id="VuQ-ul-ddW"/>
+                        <segue destination="gkc-Fu-ud0" kind="modal" identifier="segue1" modalTransitionStyle="partialCurl" id="Sy0-82-zoh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jz7-C2-jBB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3734" y="-67"/>
+        </scene>
+        <!--View Controller Pie Chart-->
+        <scene sceneID="laD-zA-w3D">
+            <objects>
+                <viewController id="gkc-Fu-ud0" customClass="ViewControllerPieChart" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DoE-f4-bup">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="bMN-8e-cmI" customClass="CPTGraphHostingView">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="714"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="P2O-l1-fVM">
+                                <rect key="frame" x="0.0" y="714" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items/>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" id="W8C-cs-vUx">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="                                                                                              Monthly Report" id="H1X-hq-OIn"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="pieChartView" destination="bMN-8e-cmI" id="BK2-ff-dmZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6oZ-Kg-xg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4945" y="-72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="daziran_diqiu_sucai-002.jpg" width="1082" height="768"/>
+        <image name="未命名-1.png" width="121" height="200"/>
+    </resources>
+    <classes>
+        <class className="AFOpenFlowView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AFOpenFlowView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dataSource"/>
+                <relationship kind="outlet" name="viewDelegate"/>
+            </relationships>
+        </class>
+        <class className="AppDelegate" superclassName="UIResponder">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AppDelegate.h"/>
+            <relationships>
+                <relationship kind="outlet" name="window1" candidateClass="UIWindow"/>
+                <relationship kind="outlet" name="window2" candidateClass="UIWindow"/>
+            </relationships>
+        </class>
+        <class className="CPTGraphHostingView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CPTGraphHostingView.h"/>
+        </class>
+        <class className="CoverFlowTestViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CoverFlowTestViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="text" candidateClass="UINavigationItem"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerBarChart" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerBarChart.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="modeChange"/>
+                <relationship kind="outlet" name="barChartView" candidateClass="CPTGraphHostingView"/>
+                <relationship kind="outlet" name="mode" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="pieChartView" candidateClass="CPTGraphHostingView"/>
+                <relationship kind="outlet" name="scatterPlotView" candidateClass="CPTGraphHostingView"/>
+            </relationships>
+        </class>
+        <class className="ViewControllerPieChart" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewControllerPieChart.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="outlet" name="barChartView" candidateClass="CPTGraphHostingView"/>
+                <relationship kind="outlet" name="pieChartView" candidateClass="CPTGraphHostingView"/>
+                <relationship kind="outlet" name="scatterPlotView" candidateClass="CPTGraphHostingView"/>
+            </relationships>
+        </class>
+        <class className="coverflow2" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/coverflow2.h"/>
+            <relationships>
+                <relationship kind="outlet" name="text1" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="floorViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/floorViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="Bar:"/>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="modeChange"/>
+                <relationship kind="outlet" name="controlBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="itemDelete" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="mode" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="loginViewController1" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/loginViewController1.h"/>
+            <relationships>
+                <relationship kind="action" name="doneEdit:"/>
+                <relationship kind="action" name="hide:"/>
+                <relationship kind="action" name="startedit:"/>
+                <relationship kind="action" name="test:"/>
+                <relationship kind="outlet" name="button" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="ip" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="name" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pass" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="port" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="sheetViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/sheetViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="outlet" name="barChartView" candidateClass="CPTGraphHostingView"/>
+                <relationship kind="outlet" name="pieChartView" candidateClass="CPTGraphHostingView"/>
+                <relationship kind="outlet" name="scatterPlotView" candidateClass="CPTGraphHostingView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

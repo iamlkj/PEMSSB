@@ -9,15 +9,32 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-
 @synthesize window = _window;
-
+@synthesize window1;
+@synthesize window2;
+//@synthesize viewController1;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    //[window1 addSubview:viewController1.view];
+    [window1 makeKeyAndVisible];
+    [window2 makeKeyAndVisible];
+    UILocalNotification *localNotif = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (localNotif) 
+    {
+        NSLog(@"Recieved Notification %@",localNotif);
+        NSDictionary* infoDic = localNotif.userInfo;
+        NSLog(@"userInfo description=%@",[infoDic description]);
+        int sd = [[infoDic objectForKey:@"Sid"] intValue];
+        int level=[[infoDic objectForKey:@"Level"] intValue];
+        
+        scc*sv=[[scc alloc]init];
+        NSString*session=[infoDic objectForKey:@"session"];
+        NSString* UIP=[infoDic objectForKey:@"UIP"];
+        [sv setItemSta:session :sd :level :UIP];
+    }
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
@@ -28,8 +45,9 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
+    // [viewController saveData];
     /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in caeeterminated later. 
      If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
      */
 }
@@ -56,5 +74,43 @@
      See also applicationDidEnterBackground:.
      */
 }
-
+- (void)application:(UIApplication *)app didReceiveLocalNotification:(UILocalNotification *)notif
+{
+    
+    
+    if (notif) 
+    {
+        // NSString*session=[sv logintest];
+        //[sv setItemSta:session :sid :level];
+        //關電器還是////////////////////////////////////////////////////////
+        UIAlertView *alert = [[UIAlertView alloc] 
+                              initWithTitle:@"排程物件"  
+                              //上面是標題的設定
+                              message:@"您的物件已排程！"//警告訊息內文的設定
+                              delegate:self // 叫出AlertView之後，要給該ViewController去處理
+                              
+                              cancelButtonTitle:@"確定"  //cancel按鈕文字的設定
+                              otherButtonTitles: nil]; // 其他按鈕的設定
+        // 如果要多個其他按鈕 >> otherButtonTitles: @"check1", @"check2", nil];
+        [alert show];
+        NSLog(@"Recieved Notification %@",notif);
+        NSDictionary* infoDic = notif.userInfo;
+        NSLog(@"userInfo description=%@",[infoDic description]);
+        int sd = [[infoDic objectForKey:@"Sid"] intValue];
+        int level=[[infoDic objectForKey:@"Level"] intValue];
+        scc*sv=[[scc alloc]init];
+        NSString*session=[infoDic objectForKey:@"session"];
+        NSString*uip=[infoDic objectForKey:@"UIP"];
+        [sv setItemSta:session :sd :level :uip];
+        
+        //NSLog(sd);
+        
+    }
+    
+}
+/*-(void)setVC:(floorViewController *)vc
+ {
+ NSLog(@"save!!!!!");
+ viewController=vc;
+ }*/
 @end

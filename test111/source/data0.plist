@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<dict>
+		<key>floor1</key>
+		<array>
+			<string></string>
+		</array>
+		<key>floordemo.jpg</key>
+		<array>
+			<dict>
+				<key>start</key>
+				<false/>
+				<key>id</key>
+				<integer>2</integer>
+				<key>type</key>
+				<integer>1</integer>
+				<key>alive</key>
+				<true/>
+				<key>location_y</key>
+				<integer>0</integer>
+				<key>location_x</key>
+				<integer>0</integer>
+				<key>status</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>start</key>
+				<true/>
+				<key>id</key>
+				<integer>0</integer>
+				<key>type</key>
+				<integer>0</integer>
+				<key>alive</key>
+				<true/>
+				<key>location_y</key>
+				<integer>123</integer>
+				<key>location_x</key>
+				<integer>456</integer>
+				<key>status</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>start</key>
+				<true/>
+				<key>id</key>
+				<integer>1</integer>
+				<key>type</key>
+				<integer>0</integer>
+				<key>alive</key>
+				<true/>
+				<key>location_y</key>
+				<integer>300</integer>
+				<key>location_x</key>
+				<integer>768</integer>
+				<key>status</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>
